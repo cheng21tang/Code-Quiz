@@ -1,18 +1,22 @@
 * {
-    font-family: monospace;
+    /* box sizing below is not working */
+    /* box-sizing: border-box; */
 }
 
 body {
     text-align: center;
+    font-family: monospace;
 }
 
 .header {
+    background-image: linear-gradient(black, rgba(11, 155, 11, 0.75));
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     border: dotted;
+    color: white;
 }
 
 nav h1 {
