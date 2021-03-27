@@ -5,3 +5,16 @@
 body {
     text-align: center;
 }
+
+.header {
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border: dotted;
+}
+
+nav h1 {
+    font-size: 72px;
+}
