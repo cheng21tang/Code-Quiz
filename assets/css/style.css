@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-    background-image: linear-gradient(black, rgba(11, 155, 11, 0.75));
+    background-image: linear-gradient(black, rgba(18, 243, 18, 0.75));
 }
 
 .navbar {
@@ -17,6 +17,10 @@ body {
     justify-content: space-between;
     border: dotted;
     color: white;
+}
+
+.navbar #highscore {
+    margin-left: 20px;
 }
 
 nav h1 {
