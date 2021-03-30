@@ -16,12 +16,12 @@
 //-----------------------//
 // PSEUDO CODE
 
-// I need to add an event listener to the "start quiz" button
-// I need to create a timer from 100 seconds counting down
-// The timer needs start when "start quiz" button is clicked
-// I need to then show the first question
-// I need to create the questions and the correct answers
-// That first question needs to have 4 answer selections the users can choose
+        // I need to add an event listener to the "start quiz" button
+        // I need to create a timer from 60 seconds counting down
+        // The timer needs start when "start quiz" button is clicked
+        // I need to then show the first question
+        // I need to create the questions and the correct answers
+        // That first question needs to have 4 answer selections the users can choose
 // If the user chooses the correct answer then I need to go to the next question
 // If the user chooses the incorrect answer then I need to deduct 10 seconds off of the timer and then go to the next question
 // the previous 3 steps need to repeat until the timer reaches 0
@@ -36,6 +36,9 @@
 
 var start = document.getElementById("startButton")
 start.addEventListener("click", startQuiz);
+
+var hide = document.getElementById("startButton")
+start.addEventListener("click", hideStartButton);
 
 var timerEl = document.getElementById("countdown");
 
@@ -52,8 +55,7 @@ function countdown() {
     }, 1000);
 }
 
-
-
+// Questions and answers
 var codeQuestions = [
     {
         question: 'What does "var" stand for?',
@@ -122,6 +124,7 @@ var codeQuestions = [
     }
 ]
 
+// startQuiz begins when the "Start Quiz" button is clicked
 function startQuiz() {
     var x = document.getElementById("quiz");
     if (x.style.display === "none") {
@@ -130,4 +133,13 @@ function startQuiz() {
         x.style.display = "none";
     }
     countdown();
+}
+
+function hideStartButton() {
+    var y = document.getElementById("startButton");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
 }
