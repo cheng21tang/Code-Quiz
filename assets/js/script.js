@@ -37,8 +37,8 @@
 var start = document.getElementById("startButton")
 start.addEventListener("click", startQuiz);
 
-var hide = document.getElementById("startButton")
-start.addEventListener("click", hideStartButton);
+// var hide = document.getElementById("startButton")
+// start.addEventListener("click", hideStartButton);
 
 var timerEl = document.getElementById("countdown");
 
@@ -135,11 +135,13 @@ function startQuiz() {
     countdown();
 }
 
-function hideStartButton() {
-    var y = document.getElementById("startButton");
-    if (y.style.display === "none") {
-        y.style.display = "block";
-    } else {
-        y.style.display = "none";
-    }
-}
+// Hides the "Start Quiz" button when it is clicked
+//------------currently not showing the question/answers after the first click---------
+// function hideStartButton() {
+//     var y = document.getElementById("startButton");
+//     if (y.style.display === "none") {
+//         y.style.display = "block";
+//     } else {
+//         y.style.display = "none";
+//     }
+// }
