@@ -37,6 +37,23 @@
 var start = document.getElementById("startButton")
 start.addEventListener("click", startQuiz);
 
+var timerEl = document.getElementById("countdown");
+
+function countdown() {
+    var timeLeft = 100;
+    var timeInterval = setInterval(function() {
+        if (timeLeft > 1) {
+            timerEl.textContent = "Timer: " + timeLeft;
+            timeLeft--;
+        } else {
+            timeEl.textContent = "";
+            clearInterval(timeInterval);
+        }
+    }, 1000);
+}
+
+
+
 var codeQuestions = [
     {
         question: 'What does "var" start for?',
@@ -56,4 +73,5 @@ function startQuiz() {
     } else {
         x.style.display = "none";
     }
+    countdown();
 }
