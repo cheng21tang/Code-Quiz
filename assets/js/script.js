@@ -60,10 +60,6 @@ var codeQuestions = [
         correctAnswer: 'variable',
         answers: ['function', 'method', 'sum', 'variable']
     }, {
-        question: 'What does NBA stand for?',
-        correctAnswer: 'National Basketball Association',
-        answers: ['National Football League', 'Major League Baseball', 'National Hockey League', 'National Basketball Association']
-    }, {
         question: 'Which would you use to link an external style sheet',
         correctAnswer: '<link rel="stylesheet" href="styles.css">',
         answers: ['<img src="stylesheet">', '<script src="scripts.js"></script>', '<script src="jquery-3.5.1.min.js"></script>', '<link rel="stylesheet" href="styles.css">']
@@ -92,7 +88,7 @@ var codeQuestions = [
         correctAnswer: 'nowrap',
         answers: ['nowrap', 'wrap', 'wrap-reverse', 'column']
     }, {
-        question: 'Which one is not a property of flex-direction?,
+        question: 'Which one is not a property of flex-direction?',
         correctAnswer: 'row-block',
         answers: ['row-reverse', 'column', 'row-block', 'column-reverse']
     }, {
@@ -119,6 +115,10 @@ var codeQuestions = [
         question: 'Which is not a css pseudo-class?',
         correctAnswer: 'visitedlink',
         answers: [':checked', ':invalid', ':focus', ':focused']
+    }, {
+        question: 'Which would you use to delcare a global css selector?',
+        correctAnswer: 'visitedlink',
+        answers: [':root', '*root', '*', '.root']
     }
 ]
 
