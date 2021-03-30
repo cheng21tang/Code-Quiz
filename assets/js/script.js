@@ -41,11 +41,10 @@ start.addEventListener("click", startQuiz);
 // start.addEventListener("click", hideStartButton);
 
 var timerEl = document.getElementById("countdown");
-var startButton
+var timeLeft = 5;
 
 // Timer function to countdown from 60 seconds
 function countdown() {
-    var timeLeft = 10;
     var timeInterval = setInterval(function() {
         if (timeLeft >= 1) {
             timerEl.textContent = "Timer: " + timeLeft;
@@ -56,6 +55,44 @@ function countdown() {
         }
     }, 1000);
 }
+
+// Hides the "Start Quiz" button
+//------------currently not showing the question/answers after the first click---------
+function hideStartButton() {
+    var y = document.getElementById("startButton");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+}
+
+// Shows questions
+function showQuestions() {
+    var x = document.getElementById("quiz");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function startQuiz() {
+    countdown();
+    hideStartButton();
+    showQuestions();
+}
+
+
+function gameOver() {
+    var z = document.getElementById("quizScore");
+    if (z.style.display === "none") {
+        z.style.display = "block";
+    } else {
+        z.style.display = "none";
+    }
+}
+
 
 // Questions and answers
 var codeQuestions = [
@@ -125,25 +162,3 @@ var codeQuestions = [
         answers: [':root', '*root', '*', '.root']
     }
 ]
-
-// startQuiz begins when the "Start Quiz" button is clicked
-function startQuiz() {
-    var x = document.getElementById("quiz");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-    countdown();
-}
-
-// Hides the "Start Quiz" button when it is clicked
-//------------currently not showing the question/answers after the first click---------
-function hideStartButton() {
-    var y = document.getElementById("startButton");
-    if (y.style.display === "none") {
-        y.style.display = "block";
-    } else {
-        y.style.display = "none";
-    }
-}

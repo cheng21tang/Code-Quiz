@@ -23,10 +23,52 @@ body {
     margin-left: 20px;
 }
 
+.navbar #countdown {
+    margin-right: 20px;
+}
+
 nav h1 {
     font-size: 72px;
 }
 
+section {
+    margin-top: 100px;
+}
+
 #quiz {
     display: none;
+}
+
+#startButton {
+    display: initial;
+    margin-top: 100px;
+}
+
+#quizScore {
+    display: none;
+}
+
+#highScoresPage {
+    background-color: lawngreen;
+}
+
+#displayHighScore {
+    font-size: 72px;
+    font-weight: bolder;
+}
+
+#table {
+    width: 100%;
+    font-size: 72px;
+    background-color: indigo;
+}
+
+#table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    height: 50px;
+    color: white;
 }
