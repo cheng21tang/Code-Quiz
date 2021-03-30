@@ -40,7 +40,7 @@ start.addEventListener("click", startQuiz);
 var timerEl = document.getElementById("countdown");
 
 function countdown() {
-    var timeLeft = 100;
+    var timeLeft = 60;
     var timeInterval = setInterval(function() {
         if (timeLeft > 1) {
             timerEl.textContent = "Timer: " + timeLeft;
@@ -56,13 +56,69 @@ function countdown() {
 
 var codeQuestions = [
     {
-        question: 'What does "var" start for?',
+        question: 'What does "var" stand for?',
         correctAnswer: 'variable',
         answers: ['function', 'method', 'sum', 'variable']
     }, {
         question: 'What does NBA stand for?',
         correctAnswer: 'National Basketball Association',
         answers: ['National Football League', 'Major League Baseball', 'National Hockey League', 'National Basketball Association']
+    }, {
+        question: 'Which would you use to link an external style sheet',
+        correctAnswer: '<link rel="stylesheet" href="styles.css">',
+        answers: ['<img src="stylesheet">', '<script src="scripts.js"></script>', '<script src="jquery-3.5.1.min.js"></script>', '<link rel="stylesheet" href="styles.css">']
+    }, {
+        question: 'What does "nav" stand for?',
+        correctAnswer: 'navigation',
+        answers: ['navigation', 'section', 'article', 'footer']
+    }, {
+        question: 'Which is not a semantic html tag?',
+        correctAnswer: '<div>',
+        answers: ['<main>', '<div>', '<mark>', '<time>']
+    }, {
+        question: 'Which is not a semantic html tag?',
+        correctAnswer: '<div>',
+        answers: ['<main>', '<div>', '<mark>', '<time>']
+    }, {
+        question: 'Which property would set 2 flexboxes on opposites ends of a flex container?',
+        correctAnswer: 'space-between',
+        answers: ['space-around', 'space-evenly', 'space-between', 'flex-end']
+    }, {
+        question: 'What is the default value for align-items?',
+        correctAnswer: 'stretch',
+        answers: ['flex-start', 'start', 'self-start', 'stretch']
+    }, {
+        question: 'What is the default value for flex-wrap',
+        correctAnswer: 'nowrap',
+        answers: ['nowrap', 'wrap', 'wrap-reverse', 'column']
+    }, {
+        question: 'Which one is not a property of flex-direction?,
+        correctAnswer: 'row-block',
+        answers: ['row-reverse', 'column', 'row-block', 'column-reverse']
+    }, {
+        question: 'Which order is correct for the flex "shorthand?',
+        correctAnswer: 'flex-grow, flex-shrink, flex-basis',
+        answers: ['flex-basis, flex-grow, flex-shrink', 'flex-grow, flex-shrink, flex-basis', 'flex-shrink, flex-grow, flex-basis', 'flex-grow, flex-shrink, flex-auto']
+    }, {
+        question: 'What is the css selector for class="class"?',
+        correctAnswer: '.class',
+        answers: ['.class', '#class', 'class', '*class']
+    }, {
+        question: 'How do you write the selector for the id="id"?',
+        correctAnswer: '#id',
+        answers: ['.id', '#id', 'id', '*id']
+    }, {
+        question: 'Which is not an anchor pseudo-class?',
+        correctAnswer: 'visitedlink',
+        answers: ['link', 'visitedlink', 'hover', 'active']
+    }, {
+        question: 'What does the tag <p> stand for?',
+        correctAnswer: 'paragraph',
+        answers: ['pause', 'parse', 'paragraph', 'protect']
+    }, {
+        question: 'Which is not a css pseudo-class?',
+        correctAnswer: 'visitedlink',
+        answers: [':checked', ':invalid', ':focus', ':focused']
     }
 ]
 
