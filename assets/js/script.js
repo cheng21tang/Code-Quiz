@@ -41,22 +41,27 @@ var start = document.getElementById("startButton")
 start.addEventListener("click", startQuiz);
 
 var currentQuestion = 0;
+
 var answerButtons = document.getElementsByClassName("answerBtn")
-answerButtons.addEventListener("click", function() {
-    currentQuestion++
-    updateQuestion(currentQuestion);
-});
+// answerButtons.addEventListener("click", currentQuestion);
+
+// for (var i = 0; i < answerButtons.length; i++) {
+//     (function(index) {
+//         answerButtons[index].addEventListener("click", function currentQuestion() {
+//             console.log("Clicked index: " + index);
+//         })
+//     }) (i);
+// }
+
+
 
 function currentQuestion() {
     currentQuestion++
     updateQuestion(currentQuestion);
 }
 
-// var hide = document.getElementById("startButton")
-// start.addEventListener("click", hideStartButton);
-
 var timerEl = document.getElementById("countdown");
-var timeLeft = 5;
+var timeLeft = 60;
 
 // Timer function to countdown from 60 seconds
 function countdown() {
@@ -99,7 +104,6 @@ function updateQuestion(bananapancakes) {
     answer2.textContent = codeQuestions[bananapancakes].answers[1]
     answer3.textContent = codeQuestions[bananapancakes].answers[2]
     answer4.textContent = codeQuestions[bananapancakes].answers[3]
-
 
 }
 
