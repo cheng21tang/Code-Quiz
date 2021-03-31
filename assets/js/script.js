@@ -43,6 +43,7 @@ window.addEventListener("load", function() {
     var questionEl = document.getElementById("question");
     var answersEl = document.getElementById("answers");
     var currentQuestion = 0;
+    var score = 0;
     // Questions and answers
     var codeQuestions = [
         {
@@ -177,6 +178,12 @@ window.addEventListener("load", function() {
             z.style.display = "none";
         }
     }
+
+    function score() {
+
+    }
+
+    localStorage.setItem("key", "score")
     
 });
 

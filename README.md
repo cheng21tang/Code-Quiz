@@ -17,17 +17,60 @@ Follow the link to [PLAY](https://cheng21tang.github.io/Code-Quiz/).
 
 ## Features and Highlights
 1. **Timer**
-    - A timer is deployed when you begin the game and it deducts -10 seconds for each wrong answer making the game challenging and dynamic for the user.
+    - A timer is deployed when you begin the game.
 2. **View High Scores**
     - View High Scores is a linked page where it saves any users score with their initials so they can come back and view their competition.
 3. **setNextQuestion**
     - When a user selects an answer we use it as a prompt to bring up the next questions reducing the clicks/input from the user.
-4. **-10 timer deduction**
-    - When a user selects an incorrect answer, we use that to deduct -10 seconds from the timer making the game more challenging.
+4. **-10 second timer deduction**
+    - When a user selects an incorrect answer, we use that to deduct -10 seconds from the timer, making the game more challenging.
 5. **Game Over**
     - When the timer reaches zero, the user will be displayed a game over message along with their score and an opportunity to enter their initials so we can record it to the High Scores page.
 6. **Local Storage**
     - We use local storage to record the high scores so the user(s) can compare and compete.
 
 
-##
+## Challenges
+1. **addEventListener**
+    - I struggled with the event listener on when the user selected an **answer button** to then be able to use that to iterate to the next question.
+2. **Score**
+    - I was going to use the function, that if the answer button was select was true, then add +10 points to **score**. Else, if the answer was false then -5 points from **score** and subtract 10 seconds from the **timer**.
+3. **localStorage**
+    - I ran out of time to be able to implement **localStorage**.
+4. **setNextQuestion**
+    - My function **setNextQuestion** was not working as expected and therefore I could not continue to work through my code on other functions. This ended up being my biggest blocker.
+
+
+### Built With
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+
+### References
+
+* [Functions](https://www.w3schools.com/js/js_functions.asp)
+* [Parameters](https://www.w3schools.com/js/js_function_parameters.asp)
+* [Arguments](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/arguments)
+* [DOM getElementById](https://www.w3schools.com/jsref/met_document_getelementbyid.asp)
+* [DOM textContent](https://www.w3schools.com/jsref/prop_node_textcontent.asp)
+* [CSS display](https://www.w3schools.com/css/css_display_visibility.asp)
+* [clearInterval](https://www.w3schools.com/jsref/met_win_clearinterval.asp)
+* [localStorage](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
+
+
+### Deployed Link
+
+* https://cheng21tang.github.io/Code-Quiz/
+* https://cheng21tang.github.io/Code-Quiz/high-score.html
+
+
+### License
+
+This project is licensed under the MIT License 
+
+
+### Acknowledgements
+
+* Special thanks to my tutor **Julio Valdez** for the assist.
