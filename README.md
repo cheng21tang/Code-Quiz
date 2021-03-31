@@ -39,7 +39,7 @@ Follow the link to [PLAY](https://cheng21tang.github.io/Code-Quiz/).
 
 **After Start Quiz with timer running**
 <br>
-![code-quiz_after-start](/assets/images/code-quiz_after-start.PNG)
+![code-quiz_after-start](/assets/images/code-quiz_after-start - Copy.PNG)
 <br>
 
 **View High Scores page**
