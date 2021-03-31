@@ -33,14 +33,19 @@ Follow the link to [PLAY](https://cheng21tang.github.io/Code-Quiz/).
 ## Screenshots
 
 **Code Quiz application**
+<br>
 ![code-quiz](/assets/images/code-quiz.PNG)
+<br>
 
 **After Start Quiz with timer running**
+<br>
 ![code-quiz_after-start](/assets/images/code-quiz_after-start.PNG)
+<br>
 
 **View High Scores page**
+<br>
 ![code-quiz](/assets/images/view-high-score.png)
-
+<br>
 
 ## Challenges
 
