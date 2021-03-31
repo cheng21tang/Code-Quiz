@@ -30,15 +30,30 @@ Follow the link to [PLAY](https://cheng21tang.github.io/Code-Quiz/).
     - We use local storage to record the high scores so the user(s) can compare and compete.
 
 
+## Screenshots
+
+**Code Quiz application**
+![code-quiz](/assets/images/code-quiz.PNG)
+
+**After Start Quiz with timer running**
+![code-quiz_after-start](/assets/images/code-quiz_after-start.PNG)
+
+**View High Scores page**
+![code-quiz](/assets/images/view-high-score.png)
+
+
 ## Challenges
-1. **addEventListener**
+
+Having blockers was a big challenge as I could not continue coding parts of the application without first completing a prerequisite portion. This made it difficult to complete and exercise knowledge I have in other areas of the application.
+
+1. **setNextQuestion**
+    - My function **setNextQuestion** was not working as expected and therefore I could not continue to work through my code on other functions. This ended up being my biggest **blocker**.
+2. **addEventListener**
     - I struggled with the event listener on when the user selected an **answer button** to then be able to use that to iterate to the next question.
-2. **Score**
-    - I was going to use the function, that if the answer button was select was true, then add +10 points to **score**. Else, if the answer was false then -5 points from **score** and subtract 10 seconds from the **timer**.
-3. **localStorage**
+3. **Score**
+    - I was going to use the function **score**, that if the answer button was select was true, then add +10 points to **score**. Else, if the answer was false then -5 points from **score** and subtract 10 seconds from the **timer**.
+4. **localStorage**
     - I ran out of time to be able to implement **localStorage**.
-4. **setNextQuestion**
-    - My function **setNextQuestion** was not working as expected and therefore I could not continue to work through my code on other functions. This ended up being my biggest blocker.
 
 
 ### Built With
