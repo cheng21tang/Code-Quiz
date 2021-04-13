@@ -38,12 +38,16 @@ window.addEventListener("load", function() {
 
     // Global variables
     var start = document.getElementById("startButton")
+    var answer1 = document.getElementById("answer-1")
+
     var timerEl = document.getElementById("countdown");
     var timeLeft = 60;
     var questionEl = document.getElementById("question");
     var answersEl = document.getElementById("answers");
     var currentQuestion = 0;
     var score = 0;
+    var timeInterval;
+    
     // Questions and answers
     var codeQuestions = [
         {
@@ -121,12 +125,12 @@ window.addEventListener("load", function() {
         countdown();
         hideStartButton();
         showQuestions();
-        setNextQuestion(); 
+        setNextQuestion();
     }
 
     // Timer function to countdown from 60 seconds
     function countdown() {
-        var timeInterval = setInterval(function() {
+        timeInterval = setInterval(function() {
             if (timeLeft >= 1) {
                 timerEl.textContent = "Timer: " + timeLeft;
                 timeLeft--;
@@ -154,19 +158,25 @@ window.addEventListener("load", function() {
     }
     
     // Displays the first question and possible answers after clicking start quiz
-    function setNextQuestion(anything) {
-        for (i = 0; i < codeQuestions.length; i++);
+    function setNextQuestion() {
 
-        var questionEl = document.getElementById("question")
-        var answer1 = document.getElementById("answer-1")
-        var answer2 = document.getElementById("answer-2")
-        var answer3 = document.getElementById("answer-3")
-        var answer4 = document.getElementById("answer-4")
-        questionEl.textContent = codeQuestions[anything][i].question
-        answer1.textContent = codeQuestions[anything].answers[0]
-        answer2.textContent = codeQuestions[anything].answers[1]
-        answer3.textContent = codeQuestions[anything].answers[2]
-        answer4.textContent = codeQuestions[anything].answers[3]
+        
+            var questionEl = document.getElementById("question")
+            var answer1 = document.getElementById("answer-1")
+            var answer2 = document.getElementById("answer-2")
+            var answer3 = document.getElementById("answer-3")
+            var answer4 = document.getElementById("answer-4")
+            questionEl.textContent = codeQuestions[currentQuestion].question
+            answer1.textContent = codeQuestions[currentQuestion].answers[0]
+            answer2.textContent = codeQuestions[currentQuestion].answers[1]
+            answer3.textContent = codeQuestions[currentQuestion].answers[2]
+            answer4.textContent = codeQuestions[currentQuestion].answers[3]
+            currentQuestion++
+            if (currentQuestion < codeQuestions.length) {
+                setNextQuestion();
+            } else {
+                clearInterval(timeInterval);
+            }
     }
 
     // When timer reaches zero it displays Gameover
@@ -187,3 +197,12 @@ window.addEventListener("load", function() {
     
 });
 
+
+
+
+function sum() {
+
+    
+}
+
+sum();
